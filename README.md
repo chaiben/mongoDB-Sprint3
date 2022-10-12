@@ -12,7 +12,35 @@ Ver respuesta en el archivo: [read_and_reverse.js](./entrega1_nivel1/read_and_re
 
 Ver respuesta en el archivo: [App.js](./entrega1_nivel2/App.js)
 
+Ver app funcionando
+```
+$ node App
+```
+
 Clases utilizadas
 - [Joc.js](./entrega1_nivel2/Joc.js)
 - [Jugador.js](./entrega1_nivel2/Jugador.js)
 - [Marcador.js](./entrega1_nivel2/Marcador.js)
+
+### Nivel 3 - Observer
+
+Dos clases creadas
+- [temas.js](./entrega1_nivel3/temas.js)
+- [user.js](./entrega1_nivel3/user.js)
+
+Ver App funcionando:
+```
+$ node App
+```
+
+## Referencias utilizadas
+
+1. Callback Hell
+    1. [YOUTUBE - ASINCRONISMO en JS 🤒 Qué es el CALLBACK HELL?](https://www.youtube.com/watch?v=iAq9SOEODvo)
+    1. [YOUTUBE - PROMESAS y ASYNC - AWAIT 😎 THEN ? ✅ CATCH?](https://www.youtube.com/watch?v=ksg6SDwllDs)
+1. Singleton
+    1. [YOUTUBE - Singleton en JavaScript](https://www.youtube.com/watch?v=rrWRhrdwuLg)
+1. Observer
+    1. [Node Observer Pattern](https://dev.to/alemagio/node-observer-pattern-27oj)
+    1. [The observer pattern](https://subscription.packtpub.com/book/web-development/9781783287314/1/ch01lvl1sec12/the-observer-pattern)
+    1. [Node documentation Event](https://nodejs.org/docs/latest/api/events.html)
