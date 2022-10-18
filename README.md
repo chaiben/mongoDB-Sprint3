@@ -28,7 +28,19 @@ Dos clases creadas
 - [temas.js](./entrega1_nivel3/temas.js)
 - [user.js](./entrega1_nivel3/user.js)
 
-Ver App funcionando:
+Ejecutar:
+```
+$ node App
+```
+
+## Entrega 3.2 - Patterns 2
+
+### Nivel 1 - Middleware
+
+- [Middlewares](./entrega2_nivel1/Middlewares.js)
+- [App](./entrega2_nivel1/app.js)
+
+Ejecutar:
 ```
 $ node App
 ```
@@ -44,3 +56,6 @@ $ node App
     1. [Node Observer Pattern](https://dev.to/alemagio/node-observer-pattern-27oj)
     1. [The observer pattern](https://subscription.packtpub.com/book/web-development/9781783287314/1/ch01lvl1sec12/the-observer-pattern)
     1. [Node documentation Event](https://nodejs.org/docs/latest/api/events.html)
+1. Middleware
+    1. [Github StratocasterO](https://github.com/StratocasterO/Node-IT-Academy/tree/main/sprint%203/Patterns%202/middleware_pattern)
+    1. [YOUTUBE - Middleware Node js Design Patterns - PT](https://www.youtube.com/watch?v=lI2MiMEn9HQ)

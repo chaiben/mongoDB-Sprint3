@@ -15,76 +15,28 @@ class Maths {
 const calculator = new Maths();
 
 // Square function
-const square = new Middlewares(calculator);
+const app = new Middlewares(calculator);
 
-square.use((req, next) => {
-  console.log('Square of', req)
-  next();
-});
-
-square.use((req, next) => {
+app.use((req, next) => {
   req.a = req.a ** 2;
-  console.log(req)
+  req.b = req.b ** 2;
+  console.log('Calculate square', req)
   next();
 });
-
-square.use((req, next) => {
-  req.b = req.b ** 2
-  console.log(req)
-  next();
-});
-
-
-console.log(square.add({a: 5, b: 10}));
-console.log(square.subtract({a: 10, b: 6}));
-console.log(square.multiply({a: 2, b:3}));
-
-// Cube function
-const cube = new Middlewares(calculator);
-
-cube.use((req, next) => {
-  console.log('Cube of', req)
-  next();
-});
-
-cube.use((req, next) => {
+app.use((req, next) => {
   req.a = req.a ** 3;
-  console.log(req)
+  req.b = req.b ** 3;
+  console.log('Calculate cube', req)
+  next();
+});
+app.use((req, next) => {
+  req.a = req.a / 2;
+  req.b = req.b / 2;
+  console.log('Calculate a division', req)
   next();
 });
 
-cube.use((req, next) => {
-  req.b = req.b ** 2
-  console.log(req)
-  next();
-});
+console.log('Result of add: ' + app.add({a: 5, b: 10}));
+console.log('Result of subtract: ' + app.subtract({a: 10, b: 6}));
+console.log('Result of multiply: ' + app.multiply({a: 2, b:3}));
 
-
-console.log(cube.add({a: 5, b: 10}));
-console.log(cube.subtract({a: 10, b: 6}));
-console.log(cube.multiply({a: 2, b:3}));
-
-// Divide function
-const divide = new Middlewares(calculator);
-
-divide.use((req, next) => {
-  console.log('divide of', req)
-  next();
-});
-
-divide.use((req, next) => {
-  req.a = req.a / req.b
-  console.log(req)
-  next();
-});
-
-divide.use((req, next) => {
-  req.b = req.b ** 2
-  console.log(req)
-  next();
-});
-
-
-console.log(divide.add({a: 5, b: 10}));
-console.log(divide.subtract({a: 10, b: 6}));
-console.log(divide.multiply({a: 2, b:3}));
