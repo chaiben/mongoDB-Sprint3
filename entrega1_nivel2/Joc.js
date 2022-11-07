@@ -8,11 +8,14 @@ module.exports = class Joc{
     this.nom = nom
   }
 
+  get marcador() {
+    return new Marcador()
+  }
+
   afegirJugador (nom) {
     const jugador = new Jugador(nom)
     this.jugadors = [...this.jugadors, jugador]
-    const marcador = new Marcador()
-    marcador.updateMarcador(this)
+    this.marcador.updateMarcador(this)
     return jugador
   }
 
@@ -22,18 +25,16 @@ module.exports = class Joc{
     
     if(position !== -1){
       this.jugadors[position].punts = this.jugadors[position].punts + punts
-      const marcador = new Marcador()
-      marcador.updateMarcador(this)
+
+      this.marcador.updateMarcador(this)
     }
   }
 
   showMarcador(){
-    const marcador = new Marcador()
-    marcador.showMarcador()
+    this.marcador.showMarcador()
   }
 
   showGanadores(){
-    const marcador = new Marcador()
-    marcador.showGanadores()
+    this.marcador.showGanadores()
   }
 }
