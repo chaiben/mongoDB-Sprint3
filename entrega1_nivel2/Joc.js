@@ -4,10 +4,8 @@ const Jugador = require('./Jugador')
 module.exports = class Joc{
   nom = '';
   jugadors = [];
-  marcador = ''
   constructor(nom) {
     this.nom = nom
-    this.marcador = new Marcador()
   }
 
   afegirJugador (nom) {
@@ -30,10 +28,12 @@ module.exports = class Joc{
   }
 
   showMarcador(){
-    this.marcador.showMarcador()
+    const marcador = new Marcador()
+    marcador.showMarcador()
   }
 
   showGanadores(){
-    this.marcador.showGanadores()
+    const marcador = new Marcador()
+    marcador.showGanadores()
   }
 }
