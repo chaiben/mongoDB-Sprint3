@@ -45,6 +45,16 @@ Ejecutar:
 $ node App
 ```
 
+### Nivel 2 - Decorator
+
+- [Articulo ES](./entrega2_nivel2/ArticuloES.js)
+- [app](./entrega2_nivel2/app.js)
+
+Ejecutar:
+```
+$ node app
+```
+
 ## Referencias utilizadas
 
 1. Callback Hell
