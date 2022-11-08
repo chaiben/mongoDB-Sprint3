@@ -55,6 +55,17 @@ Ejecutar:
 $ node app
 ```
 
+### Nivel 3 - Publisher - Subscriber
+
+Requisitos:
+- Tener instalado el RabbitMQ - [Opciones de inslación](https://www.rabbitmq.com/download.html)
+  - Se puede levantar una máquina docker con el siguiente comando:
+    > ```docker run -it --rm --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:3.11-management```
+- Instalar dependencias del proyecto
+    > ```npm install```
+
+
+
 ## Referencias utilizadas
 
 1. Callback Hell
@@ -69,3 +80,6 @@ $ node app
 1. Middleware
     1. [Github StratocasterO](https://github.com/StratocasterO/Node-IT-Academy/tree/main/sprint%203/Patterns%202/middleware_pattern)
     1. [YOUTUBE - Middleware Node js Design Patterns - PT](https://www.youtube.com/watch?v=lI2MiMEn9HQ)
+ 1. Publisher - Subscriber
+    1. [RabbitMQ](https://www.rabbitmq.com/)
+    2. [RabbitMQ Tutorial](https://www.rabbitmq.com/tutorials/tutorial-one-javascript.html)
