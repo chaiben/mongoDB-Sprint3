@@ -63,7 +63,10 @@ Requisitos:
     > ```docker run -it --rm --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:3.11-management```
 - Instalar dependencias del proyecto
     > ```npm install```
-
+- Levantar uno o más Subscriber.
+  > ```node receiver```
+- Enviar mensajes 
+  > ```node sender '[MSG]'```
 
 
 ## Referencias utilizadas
